@@ -10,7 +10,7 @@ Using the Expected SARSA Reinforcement Learning algorithm it is possible to have
 
 What is the mountain car's world and goal? What is it attempting to achieve?
 As the image below depicts, the car will be in a valley (of sorts) and the ultimate goal of this project is to have the program learn what the most effective combination of actions to take are in the given environment. 
-
+![](http://library.rl-community.org/images/2/28/MountainCar-Envirornment.png)
 Source: http://library.rl-community.org/images/2/28/MountainCar-Envirornment.png
 
 #Other bonus features, what makes this particularily interesting:
@@ -28,6 +28,7 @@ I personally believe this visual representation and comparison may help viewers 
 -Where TD is that single pair, only evaluating the two. The far left.
 -Where MC is the long chain, evaluating the entire chain. The far right.
 -Where Lambda modifies the amount of evaluation from between the far left and far right.
+![](https://webdocs.cs.ualberta.ca/~sutton/book/ebook/figtmp38.png)
 Source: https://webdocs.cs.ualberta.ca/~sutton/book/ebook/figtmp38.png
 
 ## Function Approximation:
@@ -36,7 +37,8 @@ Another perk is that this allows generalization of trail runs ran by the agent i
 
 I went with "Tile coding" here, as was advised, and as was done earlier on my github repository. This lets me map specific features of the environment to tiles located within a "grid", tiles.
 You may think of it quite literally like this, with each region associated with a particular set of values:
-http://mathforum.org/alejandre/magic.square/4x4grid.gif
+
+![](http://mathforum.org/alejandre/magic.square/4x4grid.gif)
 Source: http://mathforum.org/alejandre/magic.square/4x4grid.gif
 
 The SARSA(Lambda) equation will work directly upon this Tile coding modifying the values of the tiles associated with the events that the agent (the program) is experiencing.
