@@ -17,12 +17,13 @@ Source: http://library.rl-community.org/images/2/28/MountainCar-Envirornment.png
 
 #Other bonus features, what makes this particularily interesting:
 
-##SARSA:
+##SARSA: (Note: This uses EXPECTED SARSA!)
 This is the core algorithm that is being used within this program, it is the way the agent is actually learning how to interact with the environment based upon it's experiences with said environment. 
 
 The algorithm is as follows:
 
 ![](https://webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp8.png)
+
 Source: https://webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp8.png
 
 Now if you read carefully you will notice I said EXPECTED SARSA, -NOT- just SARSA.
