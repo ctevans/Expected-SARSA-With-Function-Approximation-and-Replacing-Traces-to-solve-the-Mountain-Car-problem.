@@ -17,6 +17,25 @@ Source: http://library.rl-community.org/images/2/28/MountainCar-Envirornment.png
 
 #Other bonus features, what makes this particularily interesting:
 
+##SARSA:
+This is the core algorithm that is being used within this program, it is the way the agent is actually learning how to interact with the environment based upon it's experiences with said environment. 
+
+The algorithm is as follows:
+
+![](https://webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp8.png)
+Source: https://webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp8.png
+
+Now if you read carefully you will notice I said EXPECTED SARSA, -NOT- just SARSA.
+
+Allow me to briefly explain the differences,
+
+SARSA will be looking at an ON-POLICY action being taken, meaning that if you chose (say) action 3 then it will look ahead to action 3's value and utilize it in the equation.
+
+EXPECTED SARSA will look at ALL POSSIBLE actions and their values. It will look at action 1's value, action 2's value, action 3's value and then will utilize them in order to achieve a value. 
+
+I realize that this may not be a fully satisfying answer to those who want to dig deeper into the reinforcement learning literature, if you desire a more fulfilling explaination I strongly urge you to read Reinforcement Learning by Sutton and Barto.
+
+
 ## Lambda:
 I stated that we're using Lambda in this equation which may not mean a whole lot to many people. 
 In Intelligent Systems, we have many methods that can learn. Of particular interest however is TD learning and MonteCarlo learning methods.
